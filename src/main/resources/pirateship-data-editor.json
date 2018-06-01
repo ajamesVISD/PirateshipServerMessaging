@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pirateship-data",
+  "private_key_id": "95296938f19281ad33d17450ec47c50f87276b11",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCezQiHW8cKLQwN\nFPItxTZwkfyBBxQcP3A2mL7xDWbQyFJok5MU/QCzsKviE4aOLr4o8INn7Y0NZWgs\nIZNJjhcH4pdKbeJbccVPfPPxcd0afhAxZJsLNKK+aN9zpOwnUzJxpTj9AQSSDuRD\nkLat3M8/1R15YvUWiwKD4kRbE7DPhw94nJ5SgEwQH3diBTlBO0JABonbq0fTaquu\nWY5bFKAydlhVwN16Tkp/BG+s36itaCJsdNJZQTFx1tDMhv5A/HxHrWsD3aHaYpjs\ncPWJzggrcyal2I58XCb9DeewJ/rKnov+vtowQ5pbCEk5150+rVLmUf7dkukhhTLm\nfZZjhxDhAgMBAAECggEARe6rK9jp/Xw7C2PHBwsLX2Wa2kOAwrPZOeHobIVnWtht\nGiqrIhoM/hT2jNfmcKT7D1JjvBfr/xNCXfTnRQQy9kD+OUPM5FJk/w1a7GAla65K\neUYB1Vx3svzCMs5VRTgpRczqHNke5ydxtKN9H3HXPxgeI7/FiQjssaGqUqWIPstd\nGLNj8AeCzqjvcdOy8JujbtJphiX1Nk1jhnC0JEZJRoJnXuB4lWllWtuTA5B9jSpz\nLHuSPUf0zdY4P1/UKfhhI82HpkzCI08m/0vIe8Vx/ZIijA2qwXAdkhbzCIFbJKDN\nP+2dfNFCUO6jLBpwHH2YOquooEnDTndzv6PXbUjfRQKBgQDLF6wuguWoPfxBa/mO\nSiTF2/XxnmOhDWU6wrv5tqmKhO9iVKYUcBQ8WS6s8+bDB+VSvKjDNQvIG7eXle9d\nwuPDmRbynp7dPJ7V17o6bVx0aUle2y36eP8KS7H9PCqWsmabnsA1Ox2KNLkt2xFR\nikR19OSwpm8WTZ4SRQUDMqgciwKBgQDIK4lwus7+Inw2Y5TIr6kgRVKKc0SWjDxv\n7/N0rvhM+dJgKMFhJT7LQZBF/W1ejI8zJdMvLnp9tn7THzpPBcBG0uDXkrx/clWH\n0xzK0K0G1sj633b9ycVzdVSYzwLnBrxsg7K0KDmYB26+4kuIF8+CpubAmIe7KQgG\nVsVIc0dZwwKBgQCM6CnAQ3VPm2IPifilbm/BD3G+Z+Q7821OrZl6Ee/jeYQVNyHb\ngD+p9z5ZJQfwPOQw2VBFz+ISvphMheyDoxoftXGkd8VFPi/9siU1MHc7FWmgdHWc\nGKLq48XkKwBpefGS+zvkMtW19Aqe9CU567LAHF8m6PKeCNApYNWveFAHLQKBgCOg\nHAYEOXLhkFndv004dlFYBSi++yYQL3F8s0fBHFAW5mpW1pQDnPlv4c2THTQGsDXa\nNYvgKczV/hx1IluOGnqAbaPwabwFDVPvLuCp4yGkeICt5O+mSY4TA8tujIWxnTdy\n+Qs3XYjBSeSPQgImurf2HHuKqh2VX+hA6TvLyJchAoGBAJSdEpqcBz/mE84N7qSN\nBlLu9cd+ASZZukh1ur3b1JkqF/RtR1LGdMNff4hxDH1JztWwX2+QI6PeY7uPh7PI\nvTWeEPTgzDxSMp4yAEUSGidzEOyK8O8VJgtI5sslCCtybyAqdW755xMPuMyFR7pX\ns8UfRXfPde1MDUC9QyJ42Fb3\n-----END PRIVATE KEY-----\n",
+  "client_email": "response-editor@pirateship-data.iam.gserviceaccount.com",
+  "client_id": "114867577536219196480",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/response-editor%40pirateship-data.iam.gserviceaccount.com"
+}
