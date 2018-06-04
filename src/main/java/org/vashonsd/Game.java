@@ -9,35 +9,32 @@ import java.util.concurrent.LinkedBlockingDeque;
 
 public class Game implements Runnable {
 
-    final BlockingQueue<Response> responsesOut = new LinkedBlockingDeque<Response>();
-    final BlockingQueue<Request> requestsIn = new LinkedBlockingDeque<Request>();
+    private Publisher publisher;
+    private Subscriber subscriber;
 
-    RequestReader requestReader;
-    ResponseWriter responseWriter;
+    final BlockingQueue<Message> messagesFromRequests = new LinkedBlockingDeque<>();
+    final BlockingQueue<Message> messagesToResponses = new LinkedBlockingDeque<>();
 
-    boolean running;
+    volatile boolean running;
 
     public Game() {
-        requestReader = new GoogleRequestReader();
-        requestReader.produceTo(requestsIn);
-        responseWriter = new GoogleResponseWriter();
-        responseWriter.consumeFrom(responsesOut);
+        publisher = new GooglePublisher();
+        publisher.setMessages(messagesToResponses);
+        subscriber = new GoogleSubscriber();
+        subscriber.setMessages(messagesFromRequests);
     }
 
     @Override
     public void run() {
-        running = true;
         ExecutorService pool = Executors.newFixedThreadPool(2);
-        pool.execute(requestReader);
-        pool.execute(responseWriter);
-        Request req;
+        pool.execute(publisher);
+        pool.execute(subscriber);
+        Message msg;
         while(running) {
-            if((req = requestsIn.poll()) != null) {
-                Response resp = new Response(
-                        req.getUuid(),
-                        req.getBody() + "!! Get crazy!!"
-                );
-                responsesOut.offer(resp);
+            if((msg = messagesFromRequests.poll()) != null) {
+                System.out.println("The game found an inbound message: " + msg);
+                msg.setBody(msg.getBody() + "!! Get it!!");
+                messagesToResponses.offer(msg);
             }
         }
     }

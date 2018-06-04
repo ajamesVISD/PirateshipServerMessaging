@@ -1,10 +1,12 @@
-package org.vashonsd.IO;
+package org.vashonsd.IO.Service;
 
-public interface MessageReaderService {
+import org.vashonsd.IO.Message;
+
+public interface Reader {
 
     /**
      * Poll the external messaging service, fetch a message, and return it formatted as a Request.
      * @return
      */
-    Request pullRequests();
+    Message read();
 }

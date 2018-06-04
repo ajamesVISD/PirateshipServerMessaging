@@ -1,7 +1,7 @@
 package org.vashonsd;
 
 /**
- * Hello world!
+ * Loads a game and runs it.
  *
  */
 public class App 

@@ -3,9 +3,7 @@ package org.vashonsd.IO;
 import com.google.auth.oauth2.ServiceAccountCredentials;
 import org.junit.Assert;
 import org.junit.Test;
-import org.omg.PortableServer.Servant;
-
-import static org.junit.Assert.*;
+import org.vashonsd.IO.Service.GoogleCredentialsBuilder;
 
 public class GoogleCredentialsBuilderTest {
 
