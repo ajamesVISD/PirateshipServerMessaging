@@ -5,9 +5,15 @@ import org.vashonsd.IO.Service.Writer;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
+/**
+ * The Publisher pushes Messages from the Java code to the external service (e.g., Google PubSub).
+ * The Writer is the component with write to the external service, and should encapsulate all the details of
+ * a) translating a Message into a format the service likes, and;
+ * b) connecting to the service and sending the Message.
+ */
 public class Publisher implements Runnable {
 
-    BlockingQueue<Message> messages;
+    BlockingQueue<Message> messages = new LinkedBlockingDeque<>();
 
     Writer writer;
     volatile boolean running;

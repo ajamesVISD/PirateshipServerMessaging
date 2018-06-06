@@ -81,6 +81,7 @@ public class GooglePubSubWriter implements Writer {
         }
 
         try {
+//            System.out.println("Server>Publisher>write: " + pmsg.toString() + " to topic " + topic);
             ApiFuture<String> messageIdFuture = publisher.publish(pmsg);
             messageIdFutures.add(messageIdFuture);
         } finally {
@@ -93,9 +94,9 @@ public class GooglePubSubWriter implements Writer {
                 e.printStackTrace();
             }
 
-            for (String messageId : messageIds) {
-                System.out.println("published with message ID: " + messageId);
-            }
+//            for (String messageId : messageIds) {
+//                System.out.println("published with message ID: " + messageId);
+//            }
         }
     }
 
@@ -178,8 +179,6 @@ public class GooglePubSubWriter implements Writer {
         private String project;
 
         public Builder() {
-            role = "pirateship-data-editor";
-            project = "pirateship-data";
         }
 
         public Builder withRole(String role) {

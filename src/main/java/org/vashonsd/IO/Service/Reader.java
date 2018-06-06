@@ -9,4 +9,9 @@ public interface Reader {
      * @return
      */
     Message read();
+
+    /**
+     * Use this to cause threads to stop gracefully.
+     */
+    void stop();
 }

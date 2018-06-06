@@ -1,17 +1,15 @@
 package org.vashonsd.IO.Service;
 
 import com.google.cloud.pubsub.v1.Publisher;
-import com.google.cloud.pubsub.v1.Subscriber;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.vashonsd.IO.Message;
-import sun.jvm.hotspot.utilities.Assert;
 
 import java.util.Random;
 import java.util.UUID;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Created by andy on 6/3/18.

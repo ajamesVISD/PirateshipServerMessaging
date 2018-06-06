@@ -1,4 +1,4 @@
-package org.vashonsd.IO.Dummy;
+package org.vashonsd.Dummy;
 
 import org.vashonsd.IO.Publisher;
 

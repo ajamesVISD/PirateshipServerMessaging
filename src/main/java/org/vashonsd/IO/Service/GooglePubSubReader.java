@@ -31,6 +31,7 @@ public class GooglePubSubReader implements Reader {
 
         @Override
         public void receiveMessage(PubsubMessage message, AckReplyConsumer consumer) {
+//            System.out.println("The MessageReceiver sees: " + message.getData().toString());
             messages.offer(message);
             consumer.ack();
         }
@@ -65,6 +66,7 @@ public class GooglePubSubReader implements Reader {
     public Message read() {
         PubsubMessage pmsg;
         if((pmsg = messages.poll()) != null) {
+//            System.out.println("The read() method in the Reader sees: " + pmsg.getData().toString());
             return new Message(pmsg.getAttributesMap().get("uuid"), pmsg.getData().toStringUtf8());
         } else {
             return null;
@@ -85,9 +87,6 @@ public class GooglePubSubReader implements Reader {
         private String role;
 
         public Builder() {
-            projectId = "pirateship-requests";
-            subscription = "requests";
-            role = "pirateship-requests-consumer";
         }
 
         public Builder withProjectId(String id) {
