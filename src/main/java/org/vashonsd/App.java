@@ -1,17 +1,17 @@
 package org.vashonsd;
 
 /**
- * Loads a game and runs it.
+ * Loads a Server, supplied with a Publisher, Subscriber and Game, and runs it.
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-       Server g = Server.fromBuilder()
+       Server s = Server.fromBuilder()
                .withGooglePubsub()
                .withGame(new DemoGame())
                .build();
-       g.run();
+       s.run();
     }
 }

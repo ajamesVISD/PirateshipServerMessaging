@@ -5,7 +5,7 @@ import org.vashonsd.IO.Message;
 public interface Reader {
 
     /**
-     * Poll the external messaging service, fetch a message, and return it formatted as a Request.
+     * The Reader brokers with the external messaging service and provides a Message or null when read() is called.
      * @return
      */
     Message read();

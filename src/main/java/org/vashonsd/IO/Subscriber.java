@@ -5,6 +5,12 @@ import org.vashonsd.IO.Service.Reader;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
+/**
+ * The Subscriber, in its thread, reads from an external service and adds what it finds to its queue
+ * in the form of a Message.
+ *
+ * Call its pull() method to see if a new Message is available.
+ */
 public class Subscriber implements Runnable {
 
     private volatile boolean running;
