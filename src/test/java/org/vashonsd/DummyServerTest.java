@@ -5,7 +5,7 @@ import org.vashonsd.Dummy.DummyGame;
 
 import static org.junit.Assert.*;
 
-public class DummyGameTest {
+public class DummyServerTest {
 
     @Test
     public void testRun() {

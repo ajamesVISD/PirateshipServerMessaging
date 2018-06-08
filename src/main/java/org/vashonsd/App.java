@@ -8,7 +8,10 @@ public class App
 {
     public static void main( String[] args )
     {
-       Game g = new Game();
+       Server g = Server.fromBuilder()
+               .withGooglePubsub()
+               .withGame(new DemoGame())
+               .build();
        g.run();
     }
 }
