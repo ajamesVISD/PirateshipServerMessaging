@@ -1,6 +1,6 @@
 package org.vashonsd.IO.Service;
 
-import org.vashonsd.IO.Message;
+import org.vashonsd.Message;
 
 public interface Writer {
 

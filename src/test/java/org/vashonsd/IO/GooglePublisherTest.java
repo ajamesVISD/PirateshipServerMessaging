@@ -4,11 +4,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.vashonsd.IO.Service.GooglePubSubWriter;
+import org.vashonsd.Message;
 
-import java.io.InputStream;
 import java.util.Properties;
-
-import static org.junit.Assert.*;
 
 public class GooglePublisherTest {
 

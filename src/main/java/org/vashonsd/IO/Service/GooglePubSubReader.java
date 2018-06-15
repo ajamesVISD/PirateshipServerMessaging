@@ -1,6 +1,5 @@
 package org.vashonsd.IO.Service;
 
-import com.google.api.core.ApiService.Listener;
 import com.google.api.gax.core.FixedCredentialsProvider;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.pubsub.v1.AckReplyConsumer;
@@ -8,7 +7,7 @@ import com.google.cloud.pubsub.v1.MessageReceiver;
 import com.google.cloud.pubsub.v1.Subscriber;
 import com.google.pubsub.v1.ProjectSubscriptionName;
 import com.google.pubsub.v1.PubsubMessage;
-import org.vashonsd.IO.Message;
+import org.vashonsd.Message;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;

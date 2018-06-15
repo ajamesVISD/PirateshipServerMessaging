@@ -2,9 +2,7 @@ package org.vashonsd.Dummy;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.vashonsd.IO.Message;
-
-import static org.junit.Assert.*;
+import org.vashonsd.Message;
 
 public class DummyReaderTest {
 

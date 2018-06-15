@@ -1,16 +1,12 @@
 package org.vashonsd.Dummy;
 
-import org.vashonsd.IO.Message;
+import org.vashonsd.Message;
 import org.vashonsd.IO.Service.Reader;
 
 import java.time.Instant;
-import java.time.temporal.TemporalField;
-import java.util.*;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadLocalRandom;
-
-import static java.time.temporal.ChronoField.INSTANT_SECONDS;
 
 public class DummyReader implements Reader {
 

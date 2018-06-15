@@ -8,7 +8,7 @@ import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.pubsub.v1.*;
 import com.google.protobuf.ByteString;
 import com.google.pubsub.v1.*;
-import org.vashonsd.IO.Message;
+import org.vashonsd.Message;
 
 import java.io.IOException;
 import java.util.ArrayList;

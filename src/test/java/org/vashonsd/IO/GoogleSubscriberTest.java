@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.vashonsd.IO.Service.GooglePubSubReader;
+import org.vashonsd.Message;
 
 import java.util.Properties;
 import java.util.concurrent.BlockingQueue;

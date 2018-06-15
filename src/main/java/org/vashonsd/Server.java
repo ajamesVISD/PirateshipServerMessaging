@@ -4,6 +4,7 @@ import org.vashonsd.IO.*;
 import org.vashonsd.IO.Service.GooglePubSubReader;
 import org.vashonsd.IO.Service.GooglePubSubWriter;
 
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -32,15 +33,22 @@ public class Server implements Runnable {
 
     }
 
+    /**
+     * The game needs a handle() method and a pull() method.
+     */
     @Override
     public void run() {
         ExecutorService pool = Executors.newFixedThreadPool(2);
         pool.execute(publisher);
         pool.execute(subscriber);
         Message msg;
+        Message response;
         while(true) {
             if((msg = subscriber.pull()) != null) {
-                publisher.publish(game.handle(msg));
+                game.handle(msg);
+            }
+            if((response = game.pull()) != null) {
+                publisher.publish(response);
             }
         }
     }

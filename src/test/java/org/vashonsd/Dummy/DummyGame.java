@@ -1,6 +1,6 @@
 package org.vashonsd.Dummy;
 
-import org.vashonsd.IO.Message;
+import org.vashonsd.Message;
 import org.vashonsd.IO.Publisher;
 import org.vashonsd.IO.Subscriber;
 
@@ -22,7 +22,6 @@ public class DummyGame implements Runnable {
     public DummyGame() {
         subscriber = new DummySubscriber();
         publisher = new DummyPublisher();
-        publisher.setMessages(messagesToResponses);
     }
 
     @Override

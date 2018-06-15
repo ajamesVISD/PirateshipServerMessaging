@@ -4,7 +4,7 @@ import com.google.cloud.pubsub.v1.Publisher;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.vashonsd.IO.Message;
+import org.vashonsd.Message;
 
 import java.util.Random;
 import java.util.UUID;

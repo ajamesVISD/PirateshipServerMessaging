@@ -1,6 +1,7 @@
 package org.vashonsd.IO;
 
 import org.vashonsd.IO.Service.Reader;
+import org.vashonsd.Message;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;

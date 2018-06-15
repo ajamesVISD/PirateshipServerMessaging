@@ -1,6 +1,6 @@
 package org.vashonsd.Dummy;
 
-import org.vashonsd.IO.Message;
+import org.vashonsd.Message;
 import org.vashonsd.IO.Service.Writer;
 
 public class DummyWriter implements Writer {

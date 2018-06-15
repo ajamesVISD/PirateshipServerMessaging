@@ -1,7 +1,7 @@
 package org.vashonsd.IO.Service;
 
 import junit.framework.TestCase;
-import org.vashonsd.IO.Message;
+import org.vashonsd.Message;
 
 /**
  * Created by andy on 6/3/18.
